@@ -7,3 +7,4 @@ export { default as Project } from "./Project";
 export { default as Contact } from "./Contact";
 export { default as Certificate } from "./Certificate";
 export { default as Resume } from "./Resume";
+export { default as About } from "./About";
