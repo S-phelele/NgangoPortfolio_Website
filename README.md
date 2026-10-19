@@ -1,86 +1,179 @@
-# Developer Portfolio Template 🚀
+# S'phelele Lucas Khumalo — Portfolio
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
-## What is this?
+Personal portfolio of **S'phelele Lucas Khumalo** — Full-Stack Developer specializing in React, React Native, Node.js, and ASP.NET Core.
 
-This simple portfolio template is designed to showcase your past projects, career history, skill sets, and more.
+**Live site:** [sphelele-khumalo-portfolio.netlify.app](https://sphelele-khumalo-portfolio.netlify.app)
 
-View the [Demo](https://yujisatojr.github.io/react-portfolio-template/).
+![Portfolio screenshot](./src/assets/images/screenshot.png)
 
-**This template is free to use, and no attribution is required.** You can fork or download this repository to customize it for your own use. Please don't forget to leave a ⭐ if you like this portfolio!
+---
 
-![screenshot](./src/assets//images/screenshot.png)
+## About
+
+A modern, dark-themed single-page portfolio built to showcase:
+
+- Professional experience (Malcam Solutions, ICEP)
+- Technical skills with progress indicators and real tech logos
+- Featured projects (e.g. JourneyStore)
+- Certificates
+- Resume (view & download)
+- Contact form (EmailJS)
+
+---
 
 ## Features
 
-✅ Open source (free to use, no attribution required)  
-✅ Responsive design & mobile-friendly  
-✅ Supports both dark and light modes  
-✅ Highly customizable multi-component layout  
-✅ Built with modern technologies (React, TypeScript, JavaScript, and SCSS)  
+- Responsive design (mobile, tablet, desktop)
+- Modern dark UI with indigo/purple accents
+- Smooth scroll navigation
+- Skill bars with official technology logos
+- Project cards ready for a multi-project grid
+- Contact form powered by EmailJS
+- Resume PDF viewer and download
+- Optimized for Netlify continuous deployment from GitHub
 
-## Quick Setup
+---
 
-1. Ensure you have [Node.js](https://nodejs.org/) installed. Check your installation by running:
+## Tech stack
 
-    ```bash
-    node -v
-    ```
+| Layer        | Technology                          |
+|-------------|--------------------------------------|
+| Framework   | React 18, TypeScript                 |
+| Styling     | SCSS / Sass                          |
+| UI          | MUI Icons, Font Awesome              |
+| Contact     | EmailJS                              |
+| Hosting     | Netlify                              |
+| Build       | Create React App (`react-scripts`)   |
 
-2. In the project directory, install dependencies:
+---
 
-    ```bash
-    npm install
-    ```
+## Quick setup (local)
 
-3. Start the development server:
+1. **Install Node.js** (v16+ recommended):  
+   [https://nodejs.org/](https://nodejs.org/)
 
-    ```bash
-    npm start
-    ```
+2. **Clone the repository**
+   ```bash
+   git clone https://github.com/S-phelele/NgangoPortfolio_Website.git
+   cd NgangoPortfolio_Website
+   ```
 
-4. Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-5. Customize the template by navigating to the `/src/components` directory. Modify texts, pictures, and other information as needed.
+4. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-The page will reload if you make edits, and you will see any lint errors in the console.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-If you are interested in creating a mockup image like the ones from the personal projects section, I recommend [Genmoo](https://gemoo.com/tools/browser-mockup-generator/). This website lets you generate sleek looking browser mockups for free.
+The app reloads on save. Lint errors appear in the terminal/console.
 
-## Deployment
+---
 
-You can choose your preferred service (e.g., [Netlify](https://www.netlify.com/), [Render](https://render.com/), [Heroku](https://www.heroku.com/)) for deployment. One of the easiest ways to host this portfolio is using GitHub Pages. Follow the instructions below for a production deploy.
+## Project structure
 
-1. **Set Up GitHub Repository**
+```
+src/
+├── components/          # Page sections
+│   ├── Navigation.tsx
+│   ├── Main.tsx         # Hero
+│   ├── About.tsx
+│   ├── Expertise.tsx    # Skills
+│   ├── Timeline.tsx     # Experience
+│   ├── Project.tsx
+│   ├── Certificate.tsx
+│   ├── Resume.tsx
+│   ├── Contact.tsx
+│   └── Footer.tsx
+├── assets/
+│   ├── images/          # Profile, project screenshots
+│   └── styles/          # SCSS per section
+├── App.tsx
+└── index.scss           # Global theme & utilities
+public/
+├── resume.pdf           # Downloadable resume
+└── index.html
+```
 
-    Create a new repository on GitHub for your portfolio app.
+---
 
-2. **Configure `package.json`**
+## Customization
 
-    Edit the following properties in your `package.json` file:
+| What to change        | Where                                      |
+|-----------------------|--------------------------------------------|
+| Name, bio, links      | `src/components/Main.tsx`, `About.tsx`     |
+| Skills & levels       | `src/components/Expertise.tsx`             |
+| Work history          | `src/components/Timeline.tsx`              |
+| Projects              | `src/components/Project.tsx` (+ images)    |
+| Certificates          | `src/components/Certificate.tsx`           |
+| Contact / EmailJS     | `src/components/Contact.tsx`               |
+| Resume PDF            | `public/resume.pdf`                        |
+| Profile photo         | `src/assets/images/profile.jpg`            |
+| Colors / theme        | `src/index.scss` (`:root` variables)       |
 
-    ```json
-    {
-        "homepage": "https://yourusername.github.io/your-repo-name",
-        "scripts": {
-            "predeploy": "npm run build",
-            "deploy": "gh-pages -d build",
-            ...
-        }
-    }
-    ```
+---
 
-    Replace `yourusername` with your GitHub username and `your-repo-name` with the name of your GitHub repository.
+## Deployment (Netlify + GitHub)
 
-3. **Deploy to GitHub Pages**
+This project is set up for **automatic deploys from GitHub**.
 
-    Run the following command to deploy your app:
+### Existing setup
 
-    ```bash
-    npm run deploy
-    ```
+- Repo: [S-phelele/NgangoPortfolio_Website](https://github.com/S-phelele/NgangoPortfolio_Website)
+- Site: [sphelele-khumalo-portfolio.netlify.app](https://sphelele-khumalo-portfolio.netlify.app)
+- Build command: `npm run build`
+- Publish directory: `build`
+- Config file: `netlify.toml`
 
-4. **Access Your Deployed App**
+### Deploy a new change
 
-    After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`.
+```bash
+git add -A
+git commit -m "Describe your update"
+git push origin main
+```
+
+Netlify will detect the push, build, and publish automatically.
+
+### Manual build (optional)
+
+```bash
+npm run build
+# Output is in the `build/` folder — upload that to any static host if needed
+```
+
+---
+
+## Scripts
+
+| Command        | Description                    |
+|----------------|--------------------------------|
+| `npm start`    | Development server             |
+| `npm run build`| Production build → `build/`    |
+| `npm test`     | Run tests                      |
+
+---
+
+## Contact
+
+- **GitHub:** [S-phelele](https://github.com/S-phelele)
+- **LinkedIn:** [khumalosphelele4252](https://www.linkedin.com/in/khumalosphelele4252/)
+- **Portfolio:** [sphelele-khumalo-portfolio.netlify.app](https://sphelele-khumalo-portfolio.netlify.app)
+
+---
+
+## License
+
+MIT — free to use and adapt. Attribution appreciated but not required.
+
+Built with care by **S'phelele Lucas Khumalo**.
