@@ -1,0 +1,84 @@
+.site-footer {
+  background: #0a0e1a;
+  border-top: 1px solid rgba(99, 102, 241, 0.12);
+  padding: 40px 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-left {
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+
+    .logo-bracket {
+      font-family: 'JetBrains Mono', monospace;
+      color: #6366f1;
+      font-weight: 500;
+    }
+
+    .logo-text {
+      font-weight: 700;
+      color: #f1f5f9;
+    }
+  }
+
+  p {
+    color: #64748b;
+    font-size: 0.875rem;
+  }
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+
+  a {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #141b2d;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    transition: all 0.25s ease;
+
+    &:hover {
+      color: #818cf8;
+      border-color: #6366f1;
+    }
+
+    svg {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.footer-copy {
+  width: 100%;
+  text-align: center;
+  color: #475569;
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left .footer-logo {
+    justify-content: center;
+  }
+}
