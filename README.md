@@ -10,7 +10,7 @@ Personal portfolio of **S'phelele Lucas Khumalo** — Full-Stack Developer speci
 
 **Live site:** [sphelele-khumalo-portfolio.netlify.app](https://sphelele-khumalo-portfolio.netlify.app)
 
-![Portfolio screenshot](./src/assets/images/screenshot.png)
+![Portfolio screenshot](./src/assets/images/Portfolio.png)
 
 ---
 
